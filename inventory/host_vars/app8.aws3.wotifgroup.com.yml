@@ -1,0 +1,13 @@
+---
+apps:
+  - cwt-batch-template
+  - cwt-batch-send-email
+  - cwt-batch-pnr-remarks
+  - cwt-batch-approval
+  - cwt_admin
+  - cwt-sbt
+  - cwt-admin
+apps_stop_only:
+  - cwt-batch-fare-loader
+  - cwt-batch-reminder
+  - cwt-batch-cancellation

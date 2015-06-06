@@ -1,0 +1,14 @@
+# This playbook reboot target hosts
+#requires --extra-vars="target=somehost"
+---
+- name: Reboot hosts
+  hosts: '{{ target }}'
+  gather_facts: no
+  sudo: yes
+  tasks:
+    - name: reboot the host
+      command: /sbin/reboot
+
+    - name: waiting for server to come back - up to 15 minutes
+      local_action: wait_for host={{ inventory_hostname }} port=22 delay=15 timeout=900 state=started search_regex=OpenSSH
+      sudo: false

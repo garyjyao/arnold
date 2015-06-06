@@ -1,0 +1,13 @@
+# This playbook start apps on particular hosts
+#requires --extra-vars="target=somehost"
+---
+- name: Start Apps
+  hosts: "{{ target }}"
+  gather_facts: no
+  sudo: yes
+  tasks:
+    - name: start apps
+      command: service {{ item }} start
+      with_items: 
+        "{{ apps }}"
+      ignore_errors: yes

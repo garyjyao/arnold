@@ -1,0 +1,8 @@
+---
+apps:
+  - rmi
+  - cwt-ticketbank-server
+  - thn-server
+  - cwt-obt
+  - sso-cwt
+  - cwt-crs

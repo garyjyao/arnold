@@ -1,0 +1,6 @@
+---
+apps:
+  - rmi
+  - sso-tra
+  - tramada-crs
+  - tramada-obt

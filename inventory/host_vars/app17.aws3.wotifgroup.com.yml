@@ -1,0 +1,4 @@
+---
+apps:
+  - cwt-crs-ws
+  - cwt-refdata-ws

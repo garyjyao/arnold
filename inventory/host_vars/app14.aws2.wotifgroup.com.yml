@@ -1,0 +1,5 @@
+---
+apps:
+  - uos_admin
+  - uos-sbt
+  - uos-admin

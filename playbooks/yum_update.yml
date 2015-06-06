@@ -1,0 +1,20 @@
+# This playbook do yum update
+#requires --extra-vars="target=somehost"
+---
+- name: Update systems
+  hosts: "{{ target }}"
+  gather_facts: no
+  sudo: yes
+  tasks:
+    - name: expire-cache
+      command: yum clean all
+      tags: 
+        - clean
+
+    - name: update
+      #raw: /usr/bin/yum -y update --security
+      command: yum -y update --security
+      async: 3600
+      tags: 
+        - update
+

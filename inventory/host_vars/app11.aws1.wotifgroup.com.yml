@@ -1,0 +1,5 @@
+---
+apps:
+  - rmi
+  - uos-crs
+  - uos-obt

@@ -1,0 +1,5 @@
+---
+apps:
+  - cwt_admin
+  - cwt-sbt
+  - cwt-admin

@@ -1,0 +1,13 @@
+---
+apps:
+  - uos-batch-template
+  - uos-batch-send-email
+  - uos-batch-pnr-remarks
+  - uos-batch-approval
+  - uos_admin
+  - uos-sbt
+  - uos-admin
+apps_stop_only:
+  - uos-batch-fare-loader
+  - uos-batch-reminder
+  - uos-batch-cancellation

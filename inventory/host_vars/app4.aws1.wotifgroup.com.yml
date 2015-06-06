@@ -1,0 +1,13 @@
+---
+apps:
+  - tra-batch-template
+  - tra-batch-send-email
+  - tra-batch-pnr-remarks
+  - tra-batch-approval
+  - tra_admin
+  - tramada-sbt
+  - tramada-admin  
+apps_stop_only:
+  - tra-batch-reminder
+  - tra-batch-pnr-remarks
+  - tra-batch-fare-loader
